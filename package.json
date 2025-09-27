@@ -1,0 +1,52 @@
+{
+  "name": "@1fun-oss/rng",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "1fun provider ltd",
+  "keywords": [
+    "igaming-certification",
+    "gaming-laboratories-international",
+    "gaminglabs",
+    "itech-labs",
+    "gli-19",
+    "csprng",
+    "rng",
+    "hmac-drbg"
+  ],
+  "homepage": "https://github.com/1fun-games/rng#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1fun-games/rng.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "rimraf dist && tsc --build tsconfig.json",
+    "lint": "eslint --ext .ts,.js,.mjs,mts .",
+    "lint:fix": "eslint --ext .ts,.js,.mjs,mts . --fix",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@eslint/compat": "~1.3.2",
+    "@eslint/eslintrc": "~3.3.1",
+    "@eslint/js": "~9.35.0",
+    "@types/jest": "~30.0.0",
+    "@types/node": "~24.3.1",
+    "@types/yargs": "~17.0.33",
+    "@typescript-eslint/eslint-plugin": "~8.43.0",
+    "@typescript-eslint/parser": "~8.43.0",
+    "eslint": "~9.35.0",
+    "eslint-config-prettier": "~10.1.8",
+    "eslint-import-resolver-typescript": "~4.4.4",
+    "eslint-plugin-import": "~2.32.0",
+    "eslint-plugin-prettier": "~5.5.4",
+    "expect": "~30.1.2",
+    "jest": "~30.1.3",
+    "rimraf": "~6.0.1",
+    "ts-jest": "~29.4.1",
+    "ts-node": "~10.9.2",
+    "typescript": "~5.9.2",
+    "yargs": "~18.0.0"
+  }
+}
