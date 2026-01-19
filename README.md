@@ -35,11 +35,11 @@ docker run -it --rm 1fun-rng
 npx ts-node ./cli/generate-dieharder-ascii.ts \
   --server-seed abcdefghijklmnopqrstuvwxyz \
   --client-seed abcdefghijklmnopqrstuvwxyz \
-  --count 100000000 \
+  --count 2684354560 \
   --destination data/hmac-dbrng.txt
 ```
 
-This creates a file `hmac-dbrng.txt` with 100_000_000 values generated with the HMAC-DRBG algorithm.
+This creates a file `hmac-dbrng.txt` with 2 684 354 560 uint32 values generated with the HMAC-DRBG algorithm.
 
 It can be used with the [dieharder](https://webhome.phy.duke.edu/~rgb/General/dieharder.php) test suite:
 ```shell
@@ -50,14 +50,14 @@ dieharder -g 202 -f data/hmac-dbrng.txt -a
 ## Generate raw output to bin file for usage with dieharder
 
 ```shell
-npx ts-node ./cli/generate-dieharder-ascii.ts \
+npx ts-node ./cli/generate-dieharder-bin.ts \
   --server-seed abcdefghijklmnopqrstuvwxyz \
   --client-seed abcdefghijklmnopqrstuvwxyz \
-  --count 100000000 \
+  --count 2684354560 \
   --destination data/hmac-dbrng.bin
 ```
 
-This creates a file `hmac-dbrng.bin` with 100_000_000 values generated with the HMAC-DRBG algorithm.
+This creates a file `hmac-dbrng.bin` with 2 684 354 560 uint32 values (10GiB of data) generated with the HMAC-DRBG algorithm.
 
 It can be used with the [dieharder](https://webhome.phy.duke.edu/~rgb/General/dieharder.php) test suite:
 ```shell
