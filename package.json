@@ -1,6 +1,6 @@
 {
   "name": "@1fun-oss/rng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "1fun provider ltd",
   "keywords": [
@@ -13,10 +13,10 @@
     "rng",
     "hmac-drbg"
   ],
-  "homepage": "https://github.com/1fun-games/rng#readme",
+  "homepage": "https://github.com/1fun-oss/rng#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1fun-games/rng.git"
+    "url": "git+https://github.com/1fun-oss/rng.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
